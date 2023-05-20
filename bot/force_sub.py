@@ -1,15 +1,15 @@
 from telethon import TelegramClient, events, functions, types
-
+import config
 # Your bot credentials
-api_id = YOUR_API_ID
-api_hash = 'YOUR_API_HASH'
-bot_token = 'YOUR_BOT_TOKEN'
+API_ID = API_ID
+API_HASH = 'API_HASH'
+BOT_TOKEN = 'BOT_TOKEN'
 
 # Your channel username
 channel_username = 'YOUR_CHANNEL_USERNAME'
 
 # Create a Telethon client
-client = TelegramClient('my_bot', api_id, api_hash).start(bot_token=bot_token)
+client = TelegramClient('my_bot', API_ID, API_HASH).start(BOT_TOKEN=BOT_TOKEN)
 
 # Define a handler for incoming messages
 @client.on(events.NewMessage(func=lambda event: not event.is_private))
