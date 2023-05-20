@@ -1,5 +1,5 @@
 from telethon import TelegramClient, events, functions, types
-import config
+from config import API_HASH,YOUR_CHANNEL_USERNAME,API_ID
 # Your bot credentials
 API_ID = API_ID
 API_HASH = 'API_HASH'
