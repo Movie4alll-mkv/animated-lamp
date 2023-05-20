@@ -4,6 +4,7 @@ import os
 class Config:
 
     API_ID = int(os.environ.get("API_ID"))
+    YOUR_CHANNEL_USERNAME = (os.environ.get("YOUR_CHANNEL_USERNAME"))
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
